@@ -5,6 +5,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/FIT5032_library/',  // 🚨 强烈建议硬编码仓库名路径
   plugins: [
     vue(),
     vueDevTools(),
@@ -13,8 +14,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  base: process.env.NODE_ENV === 'production'
-    ? '/FIT5032_library/'  // GitHub Pages 仓库名
-    : '/',
+  }
 })
