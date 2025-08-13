@@ -1,3 +1,4 @@
+<!-- src/views/CountBookAPI.vue -->
 <template>
   <div class="container mt-4">
     <h1>📚 Count Book API</h1>
@@ -32,7 +33,7 @@ const getApiData = async () => {
   error.value = null
 
   try {
-    const response = await fetch('/src/assets/json/authors.json') 
+    const response = await fetch('/json/authors.json') // ✅ 路径兼容 GitHub Pages
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
     }

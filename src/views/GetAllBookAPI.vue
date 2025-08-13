@@ -18,7 +18,7 @@ const books = ref(null)
 
 onMounted(async () => {
   try {
-    const response = await fetch('/src/assets/json/books.json')
+    const response = await fetch('/json/books.json') // ✅ 兼容 GitHub Pages
     if (!response.ok) throw new Error('Failed to load books data')
     books.value = await response.json()
   } catch (err) {

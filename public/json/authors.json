@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "F. Scott Fitzgerald",
+    "nationality": "American",
+    "birthYear": 1896
+  },
+  {
+    "id": 2,
+    "name": "Harper Lee",
+    "nationality": "American",
+    "birthYear": 1926
+  },
+  {
+    "id": 3,
+    "name": "George Orwell",
+    "nationality": "British",
+    "birthYear": 1903
+  },
+  {
+    "id": 4,
+    "name": "Jane Austen",
+    "nationality": "British",
+    "birthYear": 1775
+  }
+]
