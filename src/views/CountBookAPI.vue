@@ -33,7 +33,7 @@ const getApiData = async () => {
   error.value = null
 
   try {
-    const response = await fetch('/json/authors.json') // ✅ 路径兼容 GitHub Pages
+    const response = await fetch('json/authors.json')
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
     }
